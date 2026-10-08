@@ -65,9 +65,7 @@ jobs:
     - name: Install feeds
       run: cd handsomemod && ./scripts/feeds install -a 
 
-    - name: SSH connection to Actions
-      uses: HandsomeYingyan/debugger-action@master
-      if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
+
 
     - name: Download package
       id: package
