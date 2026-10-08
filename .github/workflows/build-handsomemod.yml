@@ -40,7 +40,7 @@ jobs:
 
     steps:
     - name: Cleanup Disk
-      uses: curoky/cleanup-disk-action@v2.0
+      uses: udo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/Code
           
     - name: Checkout
       uses: actions/checkout@master
